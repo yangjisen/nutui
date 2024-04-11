@@ -106,7 +106,8 @@ const _sfc_main = create({
       () => props.data,
       (val) => {
         state.curData = val.slice();
-      }
+      },
+      { deep: true }
     );
     return __spreadProps(__spreadValues({}, toRefs(state)), {
       cellClasses,

@@ -12908,7 +12908,8 @@ const j0 = $e({
       () => e.data,
       (y) => {
         l.curData = y.slice();
-      }
+      },
+      { deep: !0 }
     ), ce(q({}, ye(l)), {
       cellClasses: o,
       getColumnItem: r,

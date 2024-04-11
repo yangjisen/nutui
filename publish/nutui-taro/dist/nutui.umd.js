@@ -15539,7 +15539,8 @@ var __async = (__this, __arguments, generator) => {
         () => props.data,
         (val) => {
           state.curData = val.slice();
-        }
+        },
+        { deep: true }
       );
       return __spreadProps(__spreadValues({}, vue.toRefs(state)), {
         cellClasses,
